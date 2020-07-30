@@ -36,7 +36,10 @@ brew search 'term' to search for brews
 * iTerm2
 
 I am now using iTerm2 full time and I absolutely love it and good replace for default Terminal in mac.
-```brew cask install iterm2  
+
+```
+brew cask install iterm2
+
 ```
 # Development Setup
 Now that I have a nice looking command line full of features its time to start installing all of the different applications I will use. If you have any questions about any of these or why I install them please see the contact me section below.
@@ -75,6 +78,7 @@ git config --global user.email "your_email@youremail.com"
 git config --global alias.co checkout
 git config --global alias.ci commit
 git config --global alias.st status
+
 ```
 
 # Visual Studio Code
@@ -121,17 +125,18 @@ Gradle
 Maven
 Micronaut
 Spring Boot
-Here is a full list of SDKs https://sdkman.io/sdks
 
+Here is a full list of SDKs https://sdkman.io/sdks
 Installation: curl -s "https://get.sdkman.io" | bash
 
 If you just type sdk install candidate it will install the latest stable version or you can install a specific version
+
 ```
 sdk install java 8.0.191-oracle
 If you need to get a list of versions you can ask for it:
 sdk list java
-```
 
+```
 # Browser Configuration
 Turn on sync and sign into chrome, this brings all of my bookmarks and extensions.
 
@@ -141,6 +146,7 @@ LastPass
 Grammarly
 oneTab
 JSONViewer
+
 ```
 
 # Have fun
@@ -152,6 +158,7 @@ fortune | cowsay | lolcat
 
 ```
 * figlet
+
   ```
   brew install figlet
   ```
