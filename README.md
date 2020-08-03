@@ -53,7 +53,7 @@ brew cask install eclipse-java
 brew cask install postman
 brew cask install docker
 brew install tree
-brew install atom
+brew cask install atom
 brew tap jenkins-x/jx
 brew cask install google-cloud-sdk
 brew cask install zoomus
