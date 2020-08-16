@@ -40,17 +40,21 @@ I am now using iTerm2 full time and I absolutely love it and good replace for de
 ```
 brew cask install iterm2
 ```
-* ZSH
+* ohmyzsh
 
-Optionally install latest version of ZSH with Homebrew:
+"Configuring Oh My ZSH"
 ```
-brew install zsh
-echo /usr/local/bin/zsh >> /etc/shells
+ curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sH
 ```
-Set ZSH as default shell:
+"Configure ZSH  plugins"
 ```
-chsh -s $(which zsh) (chsh -s /bin/zsh to use OS version, chsh -s /usr/local/bin/zsh to use Homebrew version)
+ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+ sed -i 's/plugins=(git)/plugins=(\n  git\n)/g' ~/.zshrc
+ sed -i 's/git$/git\'$'\n  zsh-autosuggestions/g' ~/.zshrc
+ sed -i 's/zsh-autosuggestions$/zsh-autosuggestions\'$'\n  zsh-syntax-highlighting/g' ~/.zshrc
 ```
+
 # Development Setup
 Now that I have a nice looking command line full of features its time to start installing all of the different applications I will use. If you have any questions about any of these or why I install them please see the contact me section below.
 ```
