@@ -39,7 +39,17 @@ I am now using iTerm2 full time and I absolutely love it and good replace for de
 
 ```
 brew cask install iterm2
+```
+* ZSH
 
+Optionally install latest version of ZSH with Homebrew:
+```
+brew install zsh
+echo /usr/local/bin/zsh >> /etc/shells
+```
+Set ZSH as default shell:
+```
+chsh -s $(which zsh) (chsh -s /bin/zsh to use OS version, chsh -s /usr/local/bin/zsh to use Homebrew version)
 ```
 # Development Setup
 Now that I have a nice looking command line full of features its time to start installing all of the different applications I will use. If you have any questions about any of these or why I install them please see the contact me section below.
