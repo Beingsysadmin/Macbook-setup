@@ -64,6 +64,8 @@ DEFAULT_USER="yourusername"
 # Development Setup
 Now that I have a nice looking command line full of features its time to start installing all of the different applications I will use. If you have any questions about any of these or why I install them please see the contact me section below.
 ```
+brew install nvm
+brew install pyenv
 brew install git
 brew cask install google-chrome
 brew cask install brave-browser
